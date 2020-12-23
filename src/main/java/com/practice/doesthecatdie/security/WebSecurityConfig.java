@@ -31,8 +31,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
     @Override
-    @Bean
-    public AuthenticationManager authenticationManagerBean() throws Exception {
+    @Bean    public AuthenticationManager authenticationManagerBean() throws Exception {
         return super.authenticationManagerBean();
     }
 
@@ -44,8 +43,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity httpSecurity) throws Exception {
-        httpSecurity.requiresChannel().and()
-                .csrf().disable().cors().and()
+        httpSecurity.csrf().disable().cors().and()
                 .authorizeRequests().antMatchers("/index").permitAll()
                 .antMatchers("/movieDetails").permitAll()
                 .antMatchers("/activateAccount").permitAll()
