@@ -95,7 +95,7 @@ public class MovieService {
         Request request = new Request.Builder()
                 .url("https://movie-database-imdb-alternative.p.rapidapi.com/?i="+imdb_id+"&r=json")
                 .get()
-                .addHeader("x-rapidapi-key", "2e6aa3e47cmshef267f436cbf282p17b0f3jsne61e4febc47e")
+                .addHeader("x-rapidapi-key", "")
                 .addHeader("x-rapidapi-host", "movie-database-imdb-alternative.p.rapidapi.com")
                 .build();
 

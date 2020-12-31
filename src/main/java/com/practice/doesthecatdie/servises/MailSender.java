@@ -11,7 +11,7 @@ import java.util.Properties;
 public class MailSender {
 
     private final String senderEmail = "doesthecatdieapp@gmail.com";
-    private final String senderPassword = "doesthecatdieappdoesthecatdieapp";
+    private final String senderPassword = "";
     private final String activationLink="http://localhost:8080/activateAccount?userId=";
 
     private void sendAsHtml(String to, String title, String html) throws MessagingException {
